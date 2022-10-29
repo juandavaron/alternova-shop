@@ -5,3 +5,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $clr-white;
+  color: $clr-grey;
+}
+
+body,
+button {
+  font-family: $font-primary;
+  font-size: $font-SizeNormal;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: 2px solid $clr-pink;
+  background-color: $clr-white;
+  color: $clr-dark-grey;
+  padding: .25rem .75rem;
+  border-radius: 1rem;
+  transition: .3s;
+  
+  &:hover {
+    outline: 2px solid $clr-dark-grey;
+    color: $clr-btn-text;
+    background-color: $clr-btn;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 60.5rem;
+  margin: 1.5rem;
+}
+
+.section {
+  margin: 1rem;
+}

@@ -149,12 +149,12 @@ This is an example of how to list things you need to use the software and how to
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Create de UI.
-  - [ ] Make de UI Responsive.
-- [ ] Call to the API(json file).
-- [ ] Add functionality to the cart.
-- [ ] Make visual indicator when there is no enough stock.
-- [ ] Generate a new JSON.
+- [ x ] Create de UI.
+  - [ x ] Make de UI Responsive.
+- [ x ] Call to the API(json file).
+- [ x ] Add functionality to the cart.
+- [ x ] Make visual indicator when there is no enough stock.
+- [ x ] Generate a new JSON.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

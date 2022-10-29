@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "redbull",
+      "unit_price": 5000,
+      "stock": 5,
+      "img": "https://i2.wp.com/shop4fresh.com/wp-content/uploads/2020/11/12-%C3%97-473-mL-Red-Bull-Sugar-free.jpg"
+    },
+    {
+      "name": "rice",
+      "unit_price": 2000,
+      "stock": 0,
+      "img": "https://metrocolombiafood.vteximg.com.br/arquivos/ids/272415-1000-1000/7702511000014.jpg?v=637273102712330000"
+    },
+    {
+      "name": "papitas de limón margarita",
+      "unit_price": 1500,
+      "stock": 1,
+      "img": "https://mercaldas.vteximg.com.br/arquivos/ids/156179-1000-1000/38808.jpg?v=636885398849770000"
+    },
+    {
+      "name": "meat / pound",
+      "unit_price": 500,
+      "stock": 8,
+      "img": "https://metrocolombiafood.vteximg.com.br/arquivos/ids/283102-1000-1000/7700443180361.jpg?v=637342245575030000"
+    }
+  ]
+}

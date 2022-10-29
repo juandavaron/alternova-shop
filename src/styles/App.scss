@@ -1,2 +1,9 @@
 @import './utils/_variables.scss';
 @import './utils/_global.scss';
+@import './../components/ShopHeader/ShopHeader.scss';
+@import './../components/ShopMain/ShopMain.scss';
+@import './../components/ShopProductList/ShopProductList.scss';
+@import './../components/ShopCart/ShopCart.scss';
+@import './../components/ShopFooter/ShopFooter.scss';
+@import './../components/ShopModal/ShopModal.scss';
+@import './utils/_breakPoints.scss';

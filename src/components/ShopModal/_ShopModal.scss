@@ -1,0 +1,31 @@
+.modal {
+  background-color: $clr-modal-bg;
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    padding: 1.5rem 2rem;
+    margin: 1.5rem;
+    background-color: $clr-green;
+    color: $clr-grey;
+    min-height: 10rem;
+    width: 40rem;
+    font-size: $font-SizeBig;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__btn {
+    align-self: flex-end;
+  }
+}

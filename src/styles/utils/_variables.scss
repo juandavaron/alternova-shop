@@ -1,2 +1,40 @@
+// Font
+$font-primary: 'Montserrat', sans-serif;
+  // Size
+  $font-SizeBig: 1.75rem;
+  $font-SizeH1: 1.5rem;
+  $font-SizeH2: 1.25rem;
+  $font-SizeH3: 1rem;
+  $font-SizeNormal: .93rem;
+  $font-SizeSmall: .81rem;
+  $font-SizeSmaller: .75rem;
+  $font-SizeTiny: .62rem;
+  // Wight
+  $font-weightTiny: 100;
+  $font-weightLight: 300;
+  $font-weightNormal: 400;
+  $font-weightMedium: 500;
+  $font-weightBold: 700;
+
 // Color
-$bg-red: red;
+$clr-white: #f1f1f1;
+$clr-grey: #4a4a4a;
+$clr-dark-grey: #333;
+$clr-black: #1d1d1b;
+$clr-pink: #e71e6e;
+$clr-green: #7fffd4;
+
+$clr-bg: rgb(241, 202, 28);
+
+$clr-btn: #e71e6e;
+$clr-btn-text: #f1f1f1;
+$clr-btn-hover: #333;
+
+$clr-modal-bg: rgba(74, 74, 74, 0.2);
+
+// ShadowBox
+$boxshadow-img: 0px 0px 8px 1px rgba(15, 15, 15, 0.15);
+
+// Breakpoint
+  // Tablet 640px / 16px = 40em;
+  $tablet: 40em;

@@ -1,0 +1,23 @@
+@mixin breakpointMin($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@include breakpointMin($tablet) {
+  .main {
+
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  .productList {
+    
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
