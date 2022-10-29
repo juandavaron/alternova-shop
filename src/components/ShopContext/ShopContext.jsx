@@ -7,14 +7,12 @@ const ShopContext = React.createContext();
 
 function ShopProvider(props) {
 
-  // Estado Carrito
+  // Estados
   const [cartProducts, setCartProducts] = React.useState(Cart.products)
-  // Estado Total
   const [total, setTotal] = React.useState(0);
-  // Estado Modal
   const [openModal, setOpenModal] = React.useState(false);
 
-  // Enviar producto a Cart y quitar stock
+  // Agregar producto a Cart y quitar de stock
   const sendToCart = (productName) => {
 
     // Encontrar el producto
@@ -39,13 +37,13 @@ function ShopProvider(props) {
 
   };
 
-  // Efecto del total
+  // Efecto
   React.useEffect(() => {
     calcTotal()
   }, [cartProducts])
 
+  // Establecer el total
   const calcTotal = () => {
-    // Establecer el total
     const subTotal = cartProducts.map(item => item.quantity * item.unit_price)
     if (subTotal.length > 0) {
       setTotal(subTotal.reduce((accumulator, currentValue) => accumulator + currentValue, 0));
