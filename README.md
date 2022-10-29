@@ -64,7 +64,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Alternova Shop Screen Shot][product-screenshot]](https://juandavaron.github.io/alternova-shop/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -218,7 +218,7 @@ Project Link: [https://github.com/juandavaron/alternova-shop](https://github.com
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/juanvarong/
 
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: ./public/images/screenshot.png
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
