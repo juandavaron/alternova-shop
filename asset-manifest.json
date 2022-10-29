@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/juandavaron/alternova-shop/static/css/main.a3776fe6.css",
-    "main.js": "/juandavaron/alternova-shop/static/js/main.a81611cd.js",
-    "static/js/787.8f163d29.chunk.js": "/juandavaron/alternova-shop/static/js/787.8f163d29.chunk.js",
-    "index.html": "/juandavaron/alternova-shop/index.html",
-    "main.a3776fe6.css.map": "/juandavaron/alternova-shop/static/css/main.a3776fe6.css.map",
-    "main.a81611cd.js.map": "/juandavaron/alternova-shop/static/js/main.a81611cd.js.map",
-    "787.8f163d29.chunk.js.map": "/juandavaron/alternova-shop/static/js/787.8f163d29.chunk.js.map"
+    "main.css": "/alternova-shop/static/css/main.a3776fe6.css",
+    "main.js": "/alternova-shop/static/js/main.08f5aaaa.js",
+    "static/js/787.8f163d29.chunk.js": "/alternova-shop/static/js/787.8f163d29.chunk.js",
+    "index.html": "/alternova-shop/index.html",
+    "main.a3776fe6.css.map": "/alternova-shop/static/css/main.a3776fe6.css.map",
+    "main.08f5aaaa.js.map": "/alternova-shop/static/js/main.08f5aaaa.js.map",
+    "787.8f163d29.chunk.js.map": "/alternova-shop/static/js/787.8f163d29.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3776fe6.css",
-    "static/js/main.a81611cd.js"
+    "static/js/main.08f5aaaa.js"
   ]
 }
