@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/juandavaron/alternova-shop/issues"
   },
-  "homepage": "https://github.com/juandavaron/alternova-shop",
+  "homepage": "https://juandavaron.github.io/alternova-shop",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
