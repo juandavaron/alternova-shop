@@ -26,16 +26,16 @@ button {
   cursor: pointer;
   border: none;
   outline: 2px solid $clr-pink;
-  background-color: $clr-white;
-  color: $clr-dark-grey;
+  background-color: $clr-btn;
+  color: $clr-btn-text;
   padding: .25rem .75rem;
   border-radius: 1rem;
   transition: .3s;
 
   &:hover {
-    outline: 2px solid $clr-dark-grey;
-    color: $clr-btn-text;
-    background-color: $clr-btn;
+    outline: 2px solid $clr-green;
+    color: $clr-dark-grey;
+    background-color: $clr-white;
   }
 }
 

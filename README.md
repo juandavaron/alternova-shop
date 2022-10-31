@@ -153,6 +153,8 @@ This is an example of how to list things you need to use the software and how to
   - [ x ] Make de UI Responsive.
 - [ x ] Call to the API(json file).
 - [ x ] Add functionality to the cart.
+  - [ x ] Add button.
+  - [ / ] Delete button.
 - [ x ] Make visual indicator when there is no enough stock.
 - [ x ] Generate a new JSON.
 

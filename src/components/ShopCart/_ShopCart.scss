@@ -34,6 +34,12 @@
       background-color: $clr-white;
       outline: 1px solid $clr-dark-grey;
     }
+
+    & button {
+      margin-top: .5rem;
+      padding: .25rem;
+      max-width: 5rem;
+    }
   }
 
   &__label {

@@ -1,13 +1,14 @@
 import React from "react";
 import { ShopContext } from "../ShopContext/ShopContext";
 
-function ShopButton(props) {
-
-  const { sendToCart } = React.useContext(ShopContext);
+function ShopButton({
+  children,
+  click
+}) {
 
   return(
-    <button onClick={() => sendToCart(props.productName)}>
-      {props.children}
+    <button onClick={click}>
+      {children}
     </button>
   )
 };

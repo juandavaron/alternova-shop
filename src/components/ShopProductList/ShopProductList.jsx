@@ -5,21 +5,22 @@ import { ShopContext } from "../ShopContext/ShopContext";
 function ShopProductList() {
 
   const {
-    API,
+    productsList,
     sendToCart
   } = React.useContext(ShopContext);
 
   return (
     <section className="productList__section section">
       <ul className="productList__list">
-        {API.products.map(product => (
-          <li className="productList__item" key={product.name}>
+        {productsList.map(product => (
+          <li className="productList__item" key={product.id}>
             <img src={product.img} onClick={() => sendToCart(product.name)} alt={product.name}></img>
             <div className="productList__info">
               <h1>{product.unit_price}</h1>
               <p>{product.name}</p>
               <ShopButton
-              productName={product.name}
+              click={() => sendToCart(product.name)}
+              // Agregar
               > Add to cart</ShopButton>
             </div>
           </li>

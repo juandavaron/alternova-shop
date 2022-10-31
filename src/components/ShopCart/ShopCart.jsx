@@ -3,7 +3,7 @@ import { ShopContext } from "../ShopContext/ShopContext";
 import { ShopButton } from "../ShopButton/ShopButton";
 
 function ShopCart() {
-  const { cartProducts, total } = React.useContext(ShopContext);
+  const { cartProducts, total, removeItem } = React.useContext(ShopContext);
 
   return (
     <section className="cart__section section">
@@ -28,7 +28,10 @@ function ShopCart() {
               <span className="cart__label">Sub-Total</span>
               <p>{item.unit_price * item.quantity}</p>
               </div>
-              {/* <ShopButton>Delete</ShopButton> */}
+              <ShopButton
+              click={() => removeItem(item.name)}
+              // Borrar
+              >Delete</ShopButton>
             </li>
           ))}
         </ul>
