@@ -19,6 +19,9 @@ function ShopProvider(props) {
 
   // Efecto
   React.useEffect(() => {
+    console.log('Hubo un cambio:')
+    console.log(cartProducts)
+
     calcTotal()
   }, [cartProducts]);
 
@@ -35,9 +38,9 @@ function ShopProvider(props) {
   }
 
   // Agregar producto a Cart y quitar de stock
-  const sendToCart = async (productName) => {
+  const sendToCart = async (product) => {
     // Encontrar el producto
-      const productIndex = productsList.findIndex(item => item.name === productName);
+      const productIndex = productsList.findIndex(item => item.name === product.name);
       const productBought = productsList[productIndex];
 
       const res = await fetch(`${API}/${productBought.id}`, {
@@ -60,20 +63,17 @@ function ShopProvider(props) {
         const index = cartProducts.findIndex(product => product.name === productBought.name);
         if (index !== -1) {
           setCartProducts([...cartProducts], cartProducts[index].quantity++);
-          console.log('Ya existía')
         } else {
-          setCartProducts([...cartProducts, { name: productBought.name, unit_price: productBought.unit_price, quantity: 1 }])
-          console.log('No existía')
+          setCartProducts([...cartProducts, { id:productBought.id, name: productBought.name, unit_price: productBought.unit_price, quantity: 1 }])
         }
       } else {
-        setCartProducts([{ name: productBought.name, unit_price: productBought.unit_price, quantity: 1 }])
-        console.log('La lista estaba vacía y No existía', cartProducts)
+        setCartProducts([{ id:productBought.id, name: productBought.name, unit_price: productBought.unit_price, quantity: 1 }])
       }
   }
 
   // Eliminar producto del carrito
-  const removeItem = async(productName) => {
-    const productIndex = productsList.findIndex(item => item.name === productName);
+  const removeItem = async(product) => {
+    const productIndex = productsList.findIndex(item => item.name === product.name);
     const productBought = productsList[productIndex];
 
     const res = await fetch(`${API}/${productBought.id}`, {
@@ -88,15 +88,19 @@ function ShopProvider(props) {
     const data = await res.json();
     getProducts();
 
-    setCartProducts(cartProducts.filter(element => element.name !== productName))
+    if (product.quantity === 1) {
+      setCartProducts(cartProducts.filter(element => element.name !== product.name))
+    } else {
+      product.quantity--;
+    }
   }
 
   // Establecer el total
   const calcTotal = () => {
-    const subTotal = cartProducts.map(item => item.quantity * item.unit_price)
-    if (subTotal.length > 0) {
-      setTotal(subTotal.reduce((accumulator, currentValue) => accumulator + currentValue, 0));
-    }
+    // const subTotal = cartProducts.map(item => item.quantity * item.unit_price)
+    // if (subTotal.length > 0) {
+    //   setTotal(subTotal.reduce((accumulator, currentValue) => accumulator + currentValue, 0));
+    // }
   }
 
   // Cerrar el modal
@@ -112,7 +116,8 @@ function ShopProvider(props) {
       cartProducts,
       total,
       openModal,
-      closeModal
+      closeModal,
+      calcTotal
     }}>{props.children}</ShopContext.Provider>
   )
 }

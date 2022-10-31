@@ -6,7 +6,7 @@ function ShopProductList() {
 
   const {
     productsList,
-    sendToCart
+    sendToCart,
   } = React.useContext(ShopContext);
 
   return (
@@ -14,12 +14,12 @@ function ShopProductList() {
       <ul className="productList__list">
         {productsList.map(product => (
           <li className="productList__item" key={product.id}>
-            <img src={product.img} onClick={() => sendToCart(product.name)} alt={product.name}></img>
+            <img src={product.img} onClick={() => sendToCart(product)} alt={product.name}></img>
             <div className="productList__info">
               <h1>{product.unit_price}</h1>
               <p>{product.name}</p>
               <ShopButton
-              click={() => sendToCart(product.name)}
+              click={() => sendToCart(product)}
               // Agregar
               > Add to cart</ShopButton>
             </div>

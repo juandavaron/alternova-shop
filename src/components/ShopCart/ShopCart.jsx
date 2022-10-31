@@ -11,7 +11,7 @@ function ShopCart() {
         <h2>Cart</h2>
         <ul className="cart__list">
           {cartProducts.map(item => (
-            <li className="cart__item" key={item.name}>
+            <li className="cart__item" key={item.id}>
               <div>
               <span className="cart__label">Name Product:</span>
               <p>{item.name}</p>
@@ -29,7 +29,7 @@ function ShopCart() {
               <p>{item.unit_price * item.quantity}</p>
               </div>
               <ShopButton
-              click={() => removeItem(item.name)}
+              click={() => removeItem(item)}
               // Borrar
               >Delete</ShopButton>
             </li>
