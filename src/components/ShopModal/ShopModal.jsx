@@ -11,7 +11,7 @@ function ShopModal() {
     <div className="modal">
       <div className="modal__container">
         <AiOutlineCloseSquare className="modal__btn" onClick={closeModal}></AiOutlineCloseSquare>
-        <p>Sorry, we don have that product in stock</p>
+        <p>Sorry, we don't have that product in stock</p>
       </div>
     </div>,
     document.getElementById('modal')

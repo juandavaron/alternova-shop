@@ -8,16 +8,18 @@ function useLocalStorage(storageName, initialValue) {
   // Efecto
   React.useEffect(() => {
     const localStorageGet = localStorage.getItem(storageName);
-    
+
     let storageItem;
     if (!localStorageGet) {
       // Si no existe lo crea
       localStorage.setItem(storageName, JSON.stringify(initialValue))
       storageItem = initialValue;
     } else {
-      // Si existe lo parse y lo guarda.
+      // Si existe lo parsea y lo guarda.
       storageItem = JSON.parse(localStorageGet);
     }
+
+    setValue(storageItem)
   }, []);
 
   // Guardar en el LocalStorage
@@ -25,8 +27,9 @@ function useLocalStorage(storageName, initialValue) {
     const item = JSON.stringify(newItem);
     localStorage.setItem(storageName, item);
 
-    setValue(newItem);
+    setValue([...value, newItem]);
   }
+
 
   // Regresa un objeto con estados
   return {

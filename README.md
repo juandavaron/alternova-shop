@@ -118,7 +118,7 @@ This is an example of how to list things you need to use the software and how to
     ```
 
     Launches the test runner in the interactive watch     mode.\
-    See the section about [running tests](https://    facebook.github.io/create-react-app/docs/   running-tests) for more information.
+    See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
     ```sh
     npm run build
     ```
@@ -142,6 +142,19 @@ This is an example of how to list things you need to use the software and how to
 
     You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+4. Start JSON Server with the API in the port 3004:
+    ```sh
+    json-server --watch productList.json --port 3004
+    ```
+    Open [http://localhost:3004/products](http://localhost:3000) to view it in your browser.
+
+5. Start JSON Server with the Generated JSON in the port 3005:
+    ```sh
+    json-server --watch cartList.json --port 3005
+    ```
+    Open [http://localhost:3005/products](http://localhost:3000) to view it in your browser.
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -157,6 +170,7 @@ This is an example of how to list things you need to use the software and how to
   - [ / ] Delete button.
 - [ x ] Make visual indicator when there is no enough stock.
 - [ x ] Generate a new JSON.
+- [  ] Create Local Storage.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

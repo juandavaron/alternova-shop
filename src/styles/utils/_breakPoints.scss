@@ -6,7 +6,6 @@
 
 @include breakpointMin($tablet) {
   .main {
-
     &__container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -15,9 +14,19 @@
   }
 
   .productList {
-
     &__list {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .cart {
+    &__end {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__btn {
+      align-self: flex-end;
     }
   }
 }

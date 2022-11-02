@@ -3,14 +3,29 @@
   &__list {
     display: grid;
     gap: 1rem;
+  }
 
+  &__item {
+    backdrop-filter: brightness(94%);
+    border-radius: .75rem;
+    padding-bottom: .25rem;
+  }
+
+  &__img {
+    max-width: 20rem;
+    text-align: center;
+    box-shadow: $boxshadow-img;
+    border-radius: .75rem;
+    border: 2px solid $clr-dark-grey;
+    cursor: pointer;
+    
     & img {
-      box-shadow: $boxshadow-img;
-      cursor: pointer;
+      border-radius: .75rem;
+    }
 
-      &:hover {
-        outline: 1px solid $clr-pink;
-      }
+    &:hover {
+      border: none;
+      outline: 2px solid $clr-pink;
     }
   }
 

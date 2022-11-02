@@ -13,20 +13,28 @@
   &__container {
     padding: 1.5rem 2rem;
     margin: 1.5rem;
+    border-radius: .5rem;
+    outline: 2px solid $clr-dark-grey;
     background-color: $clr-green;
-    color: $clr-grey;
-    min-height: 10rem;
-    width: 40rem;
+    color: $clr-dark-grey;
     font-size: $font-SizeBig;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
+
+    & p {
+      text-align: center;
+    }
   }
 
   &__btn {
     align-self: flex-end;
     cursor: pointer;
+
+    &:hover {
+      color: $clr-pink;
+    }
   }
 }

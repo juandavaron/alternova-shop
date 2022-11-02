@@ -1,5 +1,4 @@
 import React from "react";
-import { ShopContext } from "../ShopContext/ShopContext";
 
 function ShopButton({
   children,

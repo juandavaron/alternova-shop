@@ -4,6 +4,7 @@
     padding: 1rem;
     background-color: $clr-green;
     outline: 2px solid $clr-dark-grey;
+    border-radius: .5rem;
   }
 
   &__container {
@@ -17,6 +18,7 @@
       text-align: center;
       background-color: $clr-white;
       outline: 2px solid $clr-dark-grey;
+      border-radius: .25rem;
     }
   }
 
@@ -28,6 +30,9 @@
   &__item {
     display: grid;
     gap: .5rem;
+    padding: .75rem;
+    backdrop-filter: brightness(94%);
+    border-radius: .5rem;
 
     & p {
       padding: .25rem;
@@ -46,8 +51,15 @@
     font-weight: $font-weightMedium;
   }
 
-  &__total {
+  &__end {
+    display: flex;
+    flex-direction: column;
     margin: 2rem 0;
+    gap: 1rem;
+  }
+
+  &__total {
+    width: 10rem;
 
     & p {
       padding: .25rem;
